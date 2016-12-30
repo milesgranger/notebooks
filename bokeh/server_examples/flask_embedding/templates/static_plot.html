@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ cdn_css|safe }}" type="text/css" />
+    <script type="text/javascript" src="{{ cdn_js|safe }}"></script>
+</head>
+<body>
+
+    <h3>
+        Heading
+    </h3>
+
+    {{ js|safe }}
+    {{ div|safe }}
+
+    <p>
+        Date: {{ current_date|safe }}
+    </p>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" type="text/css" />
+</head>
+<body>
+
+    <h3>
+        Heading
+    </h3>
+
+    {{ bokeh_script|safe }}
+
+    <p>
+        Paragraph
+    </p>
+
+</body>
+</html>
